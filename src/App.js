@@ -10,8 +10,9 @@ import {
 } from "@aws-amplify/ui-react";
 
 import { Amplify } from "aws-amplify";
-import awsExports from "./aws-exports";
-Amplify.configure(awsExports);
+import config from "./aws-exports";
+
+Amplify.configure(config);
 
 function App({ signOut }) {
   return (
